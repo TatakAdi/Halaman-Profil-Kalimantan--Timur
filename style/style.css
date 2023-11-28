@@ -1,0 +1,11 @@
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#Lambang {
+  height: 250px;
+}
