@@ -20,14 +20,23 @@ body {
 nav {
   background-color: rgb(143, 196, 71);
   padding: 3px;
+  position: sticky;
+  top: 0;
 }
+
 nav li {
-  display: inline;
-  padding: 15px;
+  padding: 5px;
+  list-style-type: none;
+}
+
+nav li :hover {
+  font-weight: bold;
+  color: #85929e;
 }
 
 nav ul {
-  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
@@ -60,6 +69,12 @@ aside {
   padding-left: 20px;
 }
 
+.Profil {
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
 #Database {
   text-align: center;
 }
@@ -72,4 +87,31 @@ aside {
 
 #Lambang {
   height: 250px;
+  object-position: center;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(156, 221, 67);
+  padding: 20px;
+  color: white;
+}
+
+aside table th {
+  text-align: left;
+}
+aside table td {
+  text-align: right;
+}
+aside figcaption {
+  text-align: center;
+}
+
+@media screen and (max-width: 1130px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
 }
