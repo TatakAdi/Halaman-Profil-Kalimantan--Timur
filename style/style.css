@@ -68,7 +68,7 @@ body {
 
 nav {
   background-color: rgb(143, 196, 71);
-  padding: 3px;
+  padding: 10px;
   position: sticky;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@ nav li {
   list-style-type: none;
 }
 
-nav li :hover a {
+nav li :hover {
   font-weight: bold;
   color: #85929e;
 }
